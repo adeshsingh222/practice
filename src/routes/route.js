@@ -103,5 +103,17 @@ router.get("/films/:filmId", function(req, res){
        res.send("The film id doesn't match any movie")
 })
 
+
+var arr = [1,2,3,5,6,7,8,9];
+
+var total = (arr.length+1)*(arr.length+2)/2;
+
+for(i = 0; i < arr.length; i++) {
+    total = total - arr[i];
+}
+
+
+
+
 module.exports = router;
 // adding this comment for no reason
